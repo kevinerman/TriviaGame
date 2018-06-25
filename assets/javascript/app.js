@@ -80,7 +80,7 @@ function showAnswer() {
             endGame();
             stop();
         }
-}, 1000);
+}, 5000);
 }
 
 function initQuestion(object) {
