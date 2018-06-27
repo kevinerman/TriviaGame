@@ -13,14 +13,20 @@
 
 <div class="jumbotron">
     <div class="row">
-      <div class="col">
+        <div class="col-md-3">
+            <img src="assets/images/staircar.png">
+        </div>
+      <div class="col-md-6">
         <center>
-      <h1 class="display-4">Arrested Development Trivia!</h1>
+      <h1 class="display-5">arrested <br>DEVELOPMENT <br><span class="trivia">...trivia</span></h1>
       <br>
-      <button class="btn btn-outline-secondary" id="startGame">Click to Start!</button>
-        <h2 class="display-5" id="time-left">Time Left: 15</h2>
+      <button class="btn" id="startGame">Click to Start!</button>
+        <h2 class="display-5" id="time-left">Time Left: 10</h2>
         </center>
       </div>
+      <div class="col-md-1">
+            <img class="flipcar" src="assets/images/staircar.png">
+        </div>
   </div>
 </div>
 
@@ -38,33 +44,31 @@
 
         <br>
 
-    <div class="container" id="optionDisplay">
-        <div class="row">
-            <div class="col lg-4">
-                <button class="btn btn-outline-secondary" id="option1" style="visibility: hidden"></button>
+    <div class="container">
+        <div class="row" id="optionButtons">
+            <div class="col-lg-3">
+                <button type="button" class="btn" id="option1" style="visibility: hidden"></button>
             </div>
-            <div class="col lg-4">
-                <button class="btn btn-outline-secondary" id="option2" style="visibility: hidden"></button>
+            <div class="col-lg-3">
+                <button class="btn" id="option2" style="visibility: hidden"></button>
             </div>
-            <div class="col lg-4">
-                <button class="btn btn-outline-secondary" id="option3" style="visibility: hidden"></button>
+            <div class="col-lg-3">
+                <button class="btn" id="option3" style="visibility: hidden"></button>
             </div>
-            <div class="col lg-4">
-                <button class="btn btn-outline-secondary" id="option4" style="visibility: hidden"></button>
+            <div class="col-lg-3">
+                <button class="btn" id="option4" style="visibility: hidden"></button>
             </div>
         </div>
-
-        <br>
 
         <center>
 
         <h3 id="correctDisplay">
         </h3>
 
-        <div id="mainDisplay">
-        </div>
-        <div id="mainDisplay2">
-        </div>
+        <h3 id="mainDisplay">
+        </h3>
+        <h3 id="mainDisplay2">
+        </h3>
 
         </center>
     </div>

@@ -1,0 +1,77 @@
+
+body {
+    background-color: orange
+}
+
+.display-5 {
+    padding-top: 40px;
+    padding-bottom: -40px;
+}
+
+@font-face {
+    font-family: title;
+    src: url(/assets/css/fh-holst/holsb___.ttf)
+}
+
+.jumbotron {
+    background-color: lightgrey;
+    font-family: title;
+    margin-bottom:40px;
+    height: 350px;
+}
+
+button {
+    background-color: white;
+    color: black;
+}
+
+.trivia {
+    color:red;
+    font-size: 30px;
+    margin-left:200px;
+}
+
+.display-5 {
+    padding-top: 0px;
+}
+
+#startGame {
+    margin-bottom: 15px;
+}
+
+.container {
+    margin-top: -20px;
+}
+
+img {
+    width: 350px;
+    height:auto;
+}
+
+.flipcar {
+    transform: scaleX(-1);
+}
+
+#option1 {
+    height:100px;
+    width: 200px;
+}
+
+#option2 {
+    height:100px;
+    width: 200px;
+}
+
+#option3 {
+    height:100px;
+    width: 200px;
+}
+
+#option4 {
+    height:100px;
+    width: 200px;
+}
+
+.col-lg-3 {
+    padding-top: 50px;
+}

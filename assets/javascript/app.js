@@ -4,7 +4,7 @@
 var questionNumber = 1;
 var currentQuestion = "";
 var userGuess="";
-var timeLeft= 15;
+var timeLeft= 10;
 var intervalId;
 var corrects = 0;
 var wrongs = 0;
@@ -74,7 +74,7 @@ var question3 = {
 function showAnswer() {
     setTimeout(function() {
         initQuestion(currentQuestion);
-        timeLeft=16;
+        timeLeft=11;
         startTimer();
         if (questionNumber > 3) {
             endGame();
@@ -84,8 +84,8 @@ function showAnswer() {
 }
 
 function initQuestion(object) {
-    $("button").css({visibility: "visible"});
-    $("#startGame").css({visibility: "hidden"});
+    $("button").css({display: "block"});
+    $("#startGame").css({display: "none"});
     $("#question").text(object.question);
     $("#option1").text(object.option1.text);
     $("#option2").text(object.option2.text);
@@ -121,13 +121,13 @@ function correctAnswer() {
 
     } else if (questionNumber === 3) {
 
-    $("#correctDisplay").text("Don't worry he's going to be 'all right'");       
+    $("#correctDisplay").text("Buster lost his left hand but don't worry! He's going to be 'all right'!");       
     $("#mainDisplay").html("<center> <img src='assets/images/buster.gif'> </center>")
 
     }
     questionNumber++;
     corrects++;
-    $("button").css({visibility: "hidden"});
+    $("button").css({display: "none"});
     questionCheck();
     stop();
     showAnswer();
@@ -153,7 +153,7 @@ function wrongAnswer() {
     }
     questionNumber++;
     wrongs++;
-    $("button").css({visibility: "hidden"});
+    $("button").css({display: "none"});
     questionCheck();
     stop();
     showAnswer();
@@ -179,7 +179,7 @@ function outOfTime() {
     }
     questionNumber++;
     wrongs++;
-    $("button").css({visibility: "hidden"});
+    $("button").css({display: "none"});
     questionCheck();
     stop();
     showAnswer();
@@ -201,8 +201,8 @@ function endGame() {
     $("#mainDisplay").text("Correct Answers: " + corrects);
     $("#mainDisplay2").text("Wrong Answers: " + wrongs);
     $("#startGame").text("Play Again?");
-    $("button").css({visibility: "hidden"});
-    $("#startGame").css({visibility: "visible"});
+    $("button").css({display: "none"});
+    $("#startGame").css({display: "block"});
 }
 
 
@@ -259,6 +259,6 @@ $("#startGame").on("click", function() {
     questionNumber = 1;
     initQuestion(question1);
     $("button").css({visibility: "visible"});
-    $("#startGame").css({visibility: "hidden"});
+    $("#startGame").css({display: "none"});
     startTimer();
 })
