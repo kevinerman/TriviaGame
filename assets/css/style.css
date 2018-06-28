@@ -1,6 +1,7 @@
 
 body {
-    background-color: orange
+    background-color: orange;
+    overflow:hidden;
 }
 
 .display-5 {
@@ -74,4 +75,9 @@ img {
 
 .col-lg-3 {
     padding-top: 50px;
+}
+
+#her {
+    height: 150px;
+    width: auto;
 }
